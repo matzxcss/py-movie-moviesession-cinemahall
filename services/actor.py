@@ -6,4 +6,4 @@ def get_actors() -> list[Actor]:
 
 
 def create_actor(first_name: str, last_name: str) -> Actor:
-    Actor.objects.create(first_name=first_name, last_name=last_name)
+    return Actor.objects.create(first_name=first_name, last_name=last_name)
